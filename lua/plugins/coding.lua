@@ -24,7 +24,11 @@ return {
       local luasnip = require("luasnip")
       local cmp = require("cmp")
 
+      opts.completion = vim.tbl_extend("force", opts.completion, {
+        completeopt = "menu,menuone,noinsert,noselect",
+      })
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
+        ["<CR>"] = cmp.mapping.confirm({ select = false }),
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
