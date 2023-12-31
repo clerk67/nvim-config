@@ -54,4 +54,9 @@ return {
       })
     end,
   },
+  {
+    "echasnovski/mini.pairs",
+    enabled = false,
+  },
+  { "itmammoth/doorboy.vim" },
 }
