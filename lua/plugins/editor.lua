@@ -11,5 +11,9 @@ return {
         { "<C-f>", "<cmd>Telescope live_grep<cr>", desc = "Live Grep" },
       }
     end,
+    opts = function(_, opts)
+      local actions = require("telescope.actions")
+      opts.defaults.mappings.i["<NL>"] = actions.select_vertical
+    end,
   },
 }

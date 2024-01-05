@@ -10,7 +10,10 @@ return {
   },
   {
     "echasnovski/mini.indentscope",
-    opts = { symbol = "▏" },
+    opts = {
+      draw = { animation = require("mini.indentscope").gen_animation.none() },
+      symbol = "▏",
+    },
   },
   {
     "rcarriga/nvim-notify",
