@@ -58,5 +58,9 @@ return {
     "echasnovski/mini.pairs",
     enabled = false,
   },
-  { "itmammoth/doorboy.vim" },
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    opts = { map_bs = false },
+  },
 }
