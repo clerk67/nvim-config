@@ -1,18 +1,12 @@
 return {
   {
     "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
     opts = {
       indent = {
         char = "▏",
         tab_char = "▏",
       },
-    },
-  },
-  {
-    "echasnovski/mini.indentscope",
-    opts = {
-      draw = { animation = require("mini.indentscope").gen_animation.none() },
-      symbol = "▏",
     },
   },
   {
